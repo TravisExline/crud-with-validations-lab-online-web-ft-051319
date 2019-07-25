@@ -1,5 +1,6 @@
 class SongsController < ApplicationController
   def new
+    @song = Song.new(song_params)
   end
 
   def create
